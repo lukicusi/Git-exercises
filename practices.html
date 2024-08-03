@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Use addEventListener</title>
+</head>
+<body>
+    <p id="main-text" class="orange" style="font-weight: bold;">
+    Here i will greet my friends...
+    </p>
+    <button id="greet-button">Greet Friends</button>
+    <script>
+    function greetFriends() {
+        document.getElementById("main-text").innerHTML += "Hi friends!";
+        console.log("Hi friends!");
+    }
+    // Obtain a reference to the button element
+    let button = document.getElementById("greet-button");
+    // Set named function youRang as the click event handler
+    button.addEventListener("click", greetFriends);
+    //<button onclick="greetFriends();">
+    </script>
+</body>
+</html>
